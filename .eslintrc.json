@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": "standard-with-typescript",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "extends": ["plugin:@typescript-eslint/recommended"],
+    "project": "./tsconfig.json"
+  },
+  "ignorePatterns": [
+    "dist/app.js",
+    "dist/config/database.config.js",
+    "dist/config/database.js",
+    "dist/routes/index.js",
+    "dist/routes/users.js",
+    "dist/src/app.js",
+    "dist/src/routes/index.js",
+    "dist/src/routes/users.js"
+  ],
+  "rules": {
+    // Add other rules if needed
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "multiline-ternary": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-unused-expressions": "off",
+    "@typescript-eslint/no-misused-promises": "off"
+  }
+}

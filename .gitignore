@@ -1,0 +1,11 @@
+node_modules
+yarn-error.log
+.DS_Store
+.env
+.prettierrc.json
+.prettierignore
+package-lock.json
+dist
+database.sqlite3
+yarn.lock
+
